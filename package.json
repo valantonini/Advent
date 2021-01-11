@@ -4,7 +4,9 @@
   "description": "Experimenting with the kontra.js library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "http-server dist"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,21 @@
   "bugs": {
     "url": "https://github.com/valantonini/Advent/issues"
   },
-  "homepage": "https://github.com/valantonini/Advent#readme"
+  "homepage": "https://github.com/valantonini/Advent#readme",
+  "dependencies": {
+    "kontra": "^7.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@webpack-cli/init": "^1.1.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "html-webpack-plugin": "^4.5.1",
+    "http-server": "^0.12.3",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  }
 }
