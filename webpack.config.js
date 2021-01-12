@@ -28,6 +28,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
+
+    watch: true,
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 8080
+    },
+
     plugins: [
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({ template: 'src/index.html' } )
